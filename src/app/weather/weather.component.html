@@ -1,0 +1,9 @@
+<div class="weather-item" *ngFor="let weather of weathers">
+  <p>{{ weather.location.name }}</p>
+  <span>,{{ weather.location.country }}</span>
+  <button (click)="add.emit(weather.id)" data-test="add-button">
+    Add to History
+  </button>
+</div>
+
+<!--<router-outlet></router-outlet>-->

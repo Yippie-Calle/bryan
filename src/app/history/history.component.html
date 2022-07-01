@@ -1,0 +1,8 @@
+<div class="history-item" *ngFor="let historyList of history">
+  <p>{{ historyList.location.name }}</p>
+  <span>, {{ historyList.location.country }}</span>
+  <button
+    (click)="remove.emit(historyList.id)"
+    data-test="remove-button"
+  ></button>
+</div>
